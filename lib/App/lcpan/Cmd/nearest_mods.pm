@@ -17,6 +17,9 @@ $SPEC{handle_cmd} = {
     args => {
         %App::lcpan::mod_args,
     },
+    links => [
+        {url=>'pm:CPAN::Nearest', summary=>'Also uses pm:Text::Fuzzy to search for nearest module names'},
+    ],
 };
 
 sub handle_cmd {
